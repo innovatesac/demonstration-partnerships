@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Boston Smart City Playbook — from the Mayor's Office of New Urban Mechanics</title>
+  <title>Demonstration Partnerships Policy - City of Sacramento</title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link rel='shortcut icon' href='https://monum.github.io/playbook/assets/images/b-logo-dark.svg' type='image/x-icon' />
-  <link rel="icon" type="image/png" href="https://monum.github.io/playbook/assets/images/b-logo-dark.svg" sizes="32x32" />
-  <link rel="icon" type="image/png" href="https://monum.github.io/playbook/assets/images/b-logo-dark.svg" sizes="16x16" />
-  <link href='https://monum.github.io/playbook/assets/css/styles.css' rel='stylesheet' />
+  <link rel='shortcut icon' href='/assets/images/b-logo-dark.svg' type='image/x-icon' />
+  <link rel="icon" type="image/png" href="/assets/images/b-logo-dark.svg" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/images/b-logo-dark.svg" sizes="16x16" />
+  <link href='/assets/css/styles.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -19,14 +19,14 @@
    <div class="outer_container">
     <div class="inner_container">
 
-      <a href="#introduction"><h3>Boston Smart City Playbook</h3></a>
+      <a href="#introduction"><h3>Demonstration Partnership Policy</h3></a>
       <ul class="nav">
         {% for play in site.plays %}
-          <li class="play_square"><a href="#play{{ play.play_number }}" title="View Play {{ play.play_number }}: {{ play.title }}">{{ play.play_number }}</a></li>
+          <li class="play_square"><a href="#{{ play.play_number }}" title="View Section {{ play.play_number }}: {{ play.title }}">{{ play.play_number }}</a></li>
         {% endfor %}
       </ul>
       <div id="menu_icon">
-        <a href="#plays_index_anchor" title="Return to Index"></a>
+        <a href="#sections" title="Return to Index"></a>
       </div>
     </div>
   </div>
@@ -35,14 +35,16 @@
 <div id="introduction">
   <div class="outer_container">
     <div class="inner_container">
-      <a id="bos_logo" href="https://www.boston.gov" title="Link to the City of Boston"><img src='{{site.baseurl}}/assets/images/b-logo-light.svg' alt="Logo of the City of Boston"></a>
+      <center>
+      <a id="cos_logo" href="https://www.cityofsacramento.org" title="Link to the City of Sacramento" target="_blank"><img src='/assets/images/cos_white.png' alt="Logo of the City of Sacramento"></a>
+      </center>
       {% capture introduction %}{% include introduction.md %}{% endcapture %}
       {{ introduction | markdownify }}
       <div class="button">
-        <a href="#plays_index_anchor" title="View the Plays">See the plays</a>
+        <a href="#sections" title="View the Plays">Read the Policy</a>
       </div>
       <div class="button">
-        <a href="https://github.com/monum/playbook#readme" title="Visit Github to Improve This Content">Help improve this content</a>
+        <a href="https://cityofsac.forms.fm/demonstration-partnerships" title="Submit Your Interest" target="_blank">Submit your Interest</a>
       </div>
     </div>
   </div>
@@ -51,17 +53,17 @@
 <div id="plays_index">
   <div class="outer_container">
     <div class="inner_container">
-      <a class="anchor_offset" id="plays_index_anchor"></a>
-      <h2>Smart City Plays</h2>
+      <a class="anchor_offset" id="sections"></a>
+      <h2>Policy Sections</h2>
       <div class="columns">
         <ol>
         {% for play in site.plays %}
-          <li><a href="#play{{ play.play_number }}" title="View Play {{ play.play_number }}">{{ play.title }}</a></li>
+          <li><a href="#{{ play.play_number }}" title="View Play {{ play.play_number }}">{{ play.title }}</a></li>
         {% endfor %}
         </ol>
       </div>
       <div class="button">
-        <a href="#play1" title="View the In Detail">In detail</a>
+        <a href="#1" title="View the In Detail">Continue reading</a>
       </div>
     </div>
   </div>
@@ -70,8 +72,8 @@
 <div id="plays" class="outer_container">
   {% for play in site.plays %}
     <div class="inner_container">
-      <a class="anchor_offset" id="play{{ play.play_number }}"></a>
-      <h6>PLAY {{ play.play_number }}</h6>
+      <a class="anchor_offset" id="{{ play.play_number }}"></a>
+      <h6>Section {{ play.play_number }}</h6>
       <h2 class="display">{{ play.title }}</h2>
 
       {{ play.output }}
