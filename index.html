@@ -7,10 +7,11 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link rel='shortcut icon' href='/assets/images/b-logo-dark.svg' type='image/x-icon' />
-  <link rel="icon" type="image/png" href="/assets/images/b-logo-dark.svg" sizes="32x32" />
-  <link rel="icon" type="image/png" href="/assets/images/b-logo-dark.svg" sizes="16x16" />
+  <link rel='shortcut icon' href='#' type='image/x-icon' />
+  <link rel="icon" type="image/png" href="#" sizes="32x32" />
+  <link rel="icon" type="image/png" href="#" sizes="16x16" />
   <link href='/assets/css/styles.css' rel='stylesheet' />
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
    <div class="outer_container">
     <div class="inner_container">
 
-      <a href="#introduction"><h3>Demonstration Partnership Policy</h3></a>
+      <a href="#introduction"><h3>Demonstration Partnerships Policy</h3></a>
       <ul class="nav">
         {% for play in site.plays %}
           <li class="play_square"><a href="#{{ play.play_number }}" title="View Section {{ play.play_number }}: {{ play.title }}">{{ play.play_number }}</a></li>
@@ -35,16 +36,14 @@
 <div id="introduction">
   <div class="outer_container">
     <div class="inner_container">
-      <center>
       <a id="cos_logo" href="https://www.cityofsacramento.org" title="Link to the City of Sacramento" target="_blank"><img src='/assets/images/cos_white.png' alt="Logo of the City of Sacramento"></a>
-      </center>
       {% capture introduction %}{% include introduction.md %}{% endcapture %}
       {{ introduction | markdownify }}
       <div class="button">
-        <a href="#sections" title="View the Plays">Read the Policy</a>
+        <a href="#sections" title="View the Plays"><i class="fa fa-book" aria-hidden="true"></i> Read the Policy</a>
       </div>
       <div class="button">
-        <a href="https://cityofsac.forms.fm/demonstration-partnerships" title="Submit Your Interest" target="_blank">Submit your Interest</a>
+        <a href="https://cityofsac.forms.fm/demonstration-partnerships" title="Express Your Interest" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i> Express your Interest</a>
       </div>
     </div>
   </div>
@@ -63,7 +62,7 @@
         </ol>
       </div>
       <div class="button">
-        <a href="#1" title="View the In Detail">Continue reading</a>
+        <a href="#1" title="View the In Detail"><i class="fa fa-arrow-down" aria-hidden="true"></i> Continue Reading</a>
       </div>
     </div>
   </div>
@@ -84,6 +83,15 @@
 <script src='{{site.baseurl}}/assets/js/jquery-1.11.1.min.js'></script>
 <script src='{{site.baseurl}}/assets/js/scrollspy.js'></script>
 <script src='{{site.baseurl}}/assets/js/site.js'></script>
-<script id="_fed_an_js_tag" type="text/javascript" src="{{site.baseurl}}/assets/js/federated-analytics.all.min.js?agency=GSA&sub-agency=OGP"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97991361-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

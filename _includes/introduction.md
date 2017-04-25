@@ -1,12 +1,12 @@
-# Demonstration Partnerships Policy
+# Demonstration Partnerships Policy <i class="fa fa-space-shuttle" aria-hidden="true"></i>
 
 ## Help accelerate quality of life improvements and shape the future of Sacramento, together.
 
 <div class="button">
-  <a href="#sections" title="View the Plays">Read the Policy</a>
+  <a href="#sections" title="View the Plays"><i class="fa fa-book" aria-hidden="true"></i> Read the Policy</a>
 </div>
 <div class="button">
-  <a href="https://cityofsac.forms.fm/demonstration-partnerships" title="Submit Your Interest" target="_blank">Submit your Interest</a>
+  <a href="https://cityofsac.forms.fm/demonstration-partnerships" title="Express Your Interest" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i> Express your Interest</a>
 </div>
 
 Rapid changes in technology, industries, and demographics are heightening competition and accelerating changes in consumer demands for services. The expectations of citizens and customers are growing, with increasing demand on core City services. Yet fiscal, regulatory, and organizational limitations challenge municipalities to keep pace. Complex social challenges also continue to evolve, which further emphasize the importance of more creative, multi-disciplinary initiatives. In this context, the City works to implement adopted policy initiatives with increasingly limited resources.
