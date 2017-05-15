@@ -16,4 +16,4 @@ Emerging technologies and public-private partnerships can help provide services 
 Recognizing that the City of Sacramento cannot develop these new solutions in isolation, the City seeks to work with outside innovators in the private, government, and nonprofit sectors. Partnering with external entities for the purpose of rapid deployment and demonstration requires a new policy framework, including key criteria to prioritize partnership opportunities and maximize their strategic value.
 
 ***
-*The Demonstration Partnerships Policy is pending final approval by the Sacramento City Council. This website is inspired by the [Boston Smart City Playbook](https://monum.github.io/playbook/) and the [US Digital Service's Playbook](https://playbook.cio.gov/). Please send us your thoughts for building it out further, and watch for new updates!
+*This website is inspired by the [Boston Smart City Playbook](https://monum.github.io/playbook/) and the [US Digital Service's Playbook](https://playbook.cio.gov/). Please send us your thoughts for building it out further, and watch for new updates!

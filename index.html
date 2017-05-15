@@ -10,7 +10,7 @@
   <link rel='shortcut icon' href='#' type='image/x-icon' />
   <link rel="icon" type="image/png" href="#" sizes="32x32" />
   <link rel="icon" type="image/png" href="#" sizes="16x16" />
-  <link href='/assets/css/styles.css' rel='stylesheet' />
+  <link href='{{ site.baseurl }}/assets/css/styles.css' rel='stylesheet' />
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
 </head>
 
@@ -36,7 +36,7 @@
 <div id="introduction">
   <div class="outer_container">
     <div class="inner_container">
-      <a id="cos_logo" href="https://www.cityofsacramento.org" title="Link to the City of Sacramento" target="_blank"><img src='/assets/images/cos_white.png' alt="Logo of the City of Sacramento"></a>
+      <a id="cos_logo" href="https://www.cityofsacramento.org" title="Link to the City of Sacramento" target="_blank"><img src='{{ site.baseurl }}/assets/images/cos_white.png' alt="Logo of the City of Sacramento"></a>
       {% capture introduction %}{% include introduction.md %}{% endcapture %}
       {{ introduction | markdownify }}
       <div class="button">

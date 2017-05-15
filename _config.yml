@@ -1,6 +1,6 @@
 permalink: pretty
 highlighter: rouge
-baseurl: ''
+baseurl: '/demonstration-partnerships'
 
 collections:
   - plays
